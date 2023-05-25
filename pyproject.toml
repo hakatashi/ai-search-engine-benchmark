@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ai-search-engine-benchmark"
+version = "1.0.0"
+description = ""
+authors = ["Koki Takahashi <hakatasiloving@gmail.com>"]
+license = "Apache License 2.0"
+readme = "README.md"
+packages = [{include = "ai_search_engine_benchmark"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+revChatGPT = "^5.1.3"
+EdgeGPT = "^0.6.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

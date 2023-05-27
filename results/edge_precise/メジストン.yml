@@ -1,0 +1,13 @@
+answer: メジストン
+moderation: WRONG
+moderation_note: ''
+question: モーザーの多角形表記を用いて「⑩」と表記される、1999年にユゴー・スタインハウスによって命名された巨大数は何ですか？
+result: |+
+  [1]: https://ja.wikipedia.org/wiki/%E5%B7%A8%E5%A4%A7%E6%95%B0 "巨大数 - Wikipedia"
+  [2]: https://ja.wikipedia.org/wiki/%E5%A4%9A%E8%A7%92%E5%BD%A2%E8%A1%A8%E8%A8%98 "多角形表記 - Wikipedia"
+
+  モーザーの多角形表記を用いて「⑩」と表記される、1999年にユゴー・スタインハウスによって命名された巨大数は、**モーザーの10次多角形数**です[^1^][1]。
+
+  [^1^][1]: [巨大数 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%B7%A8%E5%A4%A7%E6%95%B0#%E3%83%A2%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE10%E6%AC%A1%E5%A4%9A%E8%A7%92%E5%BD%A2%E6%95%B0)
+
+...

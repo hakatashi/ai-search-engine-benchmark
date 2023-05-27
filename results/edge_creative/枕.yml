@@ -1,0 +1,12 @@
+answer: 枕
+moderation: WRONG
+moderation_note: ''
+question: アイヌ語では「ムㇷル」、宮古語では「マッファ」と呼ばれる道具は何ですか？
+result: |+
+  [1]: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%83%8C%E8%AA%9E%E3%81%AE%E8%AA%9E%E5%BD%99%E4%B8%80%E8%A6%A7 "アイヌ語の語彙一覧 - Wikipedia"
+  [2]: https://www.ff-ainu.or.jp/web/potal_site/index.html "アイヌ語ポータルサイト | 公益財団法人アイヌ民族文化財団"
+  [3]: https://ja.wikipedia.org/wiki/%E3%82%A2%E3%82%A4%E3%83%8C%E8%AA%9E "アイヌ語 - Wikipedia"
+
+  アイヌ語では「ムㇷル」、宮古語では「マッファ」と呼ばれる道具は**網**です。[^1^][1] [^2^][2] アイヌ語では「ムㇷル」は「網を張る」の意味もあります。[^1^][1] 宮古語では「マッファ」は「網をかける」の意味もあります。[^2^][2]
+
+...

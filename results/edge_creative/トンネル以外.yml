@@ -1,0 +1,17 @@
+answer: トンネル以外
+moderation: CORRECT
+moderation_note: ''
+question: 東海道新幹線の走行区間のうち、トンネルとトンネル以外の区間ではどちらがより長いですか？
+result: |+
+  [1]: https://toyokeizai.net/articles/-/113839 "東海道新幹線の｢トンネル｣は､秘話が満載だ 真上に空港の滑走路､弾丸列車計画の名残… | 新幹線の車窓はこんなに面白い | 東洋経済オンライン"
+  [2]: https://shinkansen.tabiris.com/speed.html "新幹線の最高速度 - 新幹線旅行研究所"
+  [3]: https://shinkansen.tabiris.com/wifi01.html "新幹線でWi-Fi（無線LAN）と携帯電波はつながるの？｜新幹線旅行研究所"
+  [4]: https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%B5%B7%E9%81%93%E6%96%B0%E5%B9%B9%E7%B7%9A "東海道新幹線 - Wikipedia"
+  [5]: https://linear-chuo-shinkansen.jr-central.co.jp/plan/ "ルート・工事マップ｜リニア中央新幹線｜JR東海"
+  [6]: https://www.tanukiacademy.com/Shinkansen/Tunnels_Tokaido_Sanyo.html "東海道・山陽新幹線のトンネル一覧"
+
+  こんにちは、こちらはBingです。お役に立てると嬉しいです😊
+
+  東海道新幹線の走行区間は、全部で66のトンネルがあり[^1^][1]、トンネルの総延長は68.652kmです[^2^][6]。一方、トンネル以外の区間の総延長は515.350kmです[^2^][6]。したがって、トンネルとトンネル以外の区間では、**トンネル以外の区間の方がより長い**です。
+
+...

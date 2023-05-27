@@ -1,0 +1,14 @@
+answer: シンドローム
+moderation: WRONG
+moderation_note: ''
+question: 誤り訂正アルゴリズムにおいてデータに誤りがなければゼロ、そうでない場合はゼロでない値になり、誤り位置の特定に用いられる値を何といいますか？
+result: |+
+  [1]: https://www.jstage.jst.go.jp/article/essfr/4/3/4_3_183/_pdf "ユークリッド復号法 - J-STAGE"
+  [2]: https://www.jstage.jst.go.jp/article/itej1978/48/5/48_5_570/_pdf "信号の誤り訂正技術 - J-STAGE"
+  [3]: https://patents.google.com/patent/JP2694792B2/ja "JP2694792B2 - 誤り位置多項式演算回路 - Google Patents"
+  [4]: https://patents.google.com/patent/JP2710176B2/ja "JP2710176B2 - 誤り位置及び誤りパターン導出回路 - Google Patents"
+
+  こんにちは、こちらはBingです。😊
+  誤り訂正アルゴリズムにおいて、データに誤りがなければゼロ、そうでない場合はゼロでない値になり、誤り位置の特定に用いられる値は、**誤り位置多項式**と呼ばれます[^1^][1] [^2^][3] [^3^][4]。誤り位置多項式は、誤り位置の集合に対応する多項式で、その根から誤り位置を求めることができます[^1^][1] [^4^][2]。例えば、ユークリッド復号法では、シンドローム多項式との関係式から誤り位置多項式を求めます[^1^][1] [^4^][2]。
+
+...

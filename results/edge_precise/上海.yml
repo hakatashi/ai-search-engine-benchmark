@@ -1,0 +1,13 @@
+answer: 上海
+moderation: WRONG
+moderation_note: ''
+question: 漢字1字では「さんずいに跋扈の扈」と表記される中国の都市はどこですか？
+result: |+
+  [1]: https://ja.wikipedia.org/wiki/%E6%96%B9%E8%A8%80%E5%AD%97 "方言字 - Wikipedia"
+  [2]: https://meaning.jp/posts/2726 "「跋扈」とは？意味や読み方を解説！ | 意味解説"
+  [3]: https://ja.wikipedia.org/wiki/%E6%BA%80%E6%B4%B2 "満洲 - Wikipedia"
+  [4]: https://kanjitisiki.com/busyu/3kaku/44.html "部首が「さんずい」の漢字一覧 - 漢字辞典"
+
+  「さんずいに跋扈の扈」と表記される中国の都市は、中国東北部にある「満洲」（マンシュウ）という地域を指す呼称であることがわかりました[^1^][3]。ただし、この呼称は現在ではあまり使われておらず、一般的には「東北地方」と呼ばれています。ご参考になれば幸いです。
+
+...

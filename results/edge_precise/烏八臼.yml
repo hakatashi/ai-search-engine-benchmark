@@ -1,0 +1,15 @@
+answer: 烏八臼
+moderation: WRONG
+moderation_note: ''
+question: 鵮という漢字が変化して現在の形になったと推測されている、禅宗の墓標に刻まれることが多い文字を、構成する漢字3字を並べて通称何といいますか？
+result: |+
+  [1]: https://kotobaken.jp/qa/yokuaru/qa-55/ "「国」と「國」のように、昔と今とで形がちがう漢字があるのはなぜですか - ことばの疑問 - ことば研究館"
+  [2]: https://ja.wikipedia.org/wiki/%E3%80%BC "〼 - Wikipedia"
+  [3]: https://ja.wikipedia.org/wiki/%E6%BC%A2%E5%AD%97 "漢字 - Wikipedia"
+
+  「〼」（ます記号）と呼ばれることが多いです。[^1^][2] この文字は、禅宗の墓標に刻まれることが多い文字で、鵮という漢字が変化して現在の形になったと推測されています。[^2^][1]
+
+  [^2^][1]: [Wikipedia](https://ja.wikipedia.org/wiki/%E3%80%BC)
+  [^1^][2]: [Yahoo!知恵袋](https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q131193794)
+
+...

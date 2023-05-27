@@ -1,0 +1,20 @@
+answer: 駒が載っていないマス
+moderation: CORRECT
+moderation_note: ''
+question: 将棋の初期配置で、駒が載っているマスと駒が載っていないマスはどちらが多いですか？
+result: |+
+  [1]: https://www.shogi-rule.com/koma_shoki/ "将棋の駒の初期配置と並べ順｜将棋ルール.com - 将棋のルールから覚える初心者向け入門サイト"
+  [2]: https://shogishinrar.com/shogihaichi "将棋の初期配置を覚えよう！将棋神ラー式の覚え方も伝授！並べ順もある！？ | 将棋神ラー"
+  [3]: https://ja.wikipedia.org/wiki/%E3%81%AF%E3%81%95%E3%81%BF%E5%B0%86%E6%A3%8B "はさみ将棋 - Wikipedia"
+  [4]: https://ja.wikipedia.org/wiki/%E7%AE%B1%E5%85%A5%E3%82%8A%E5%A8%98_%28%E3%83%91%E3%82%BA%E3%83%AB%29 "箱入り娘 (パズル) - Wikipedia"
+  [5]: http://www.koichi.jp/shogi/rule/howto/howto-01.php "開始から終わりまでの流れ | 将棋のルール"
+
+  将棋の初期配置で、駒が載っているマスと駒が載っていないマスはどちらが多いですか？ という質問ですね。検索してみました。
+
+  将棋の初期配置は、9×9マスの盤上に40枚の駒を上の図のように配置します[^1^][1] [^2^][2]。
+
+  ![将棋の初期配置](https://www.shogi-rule.com/wp-content/uploads/2018/12/shogi_shoki.png)
+
+  駒が載っているマスは、歩が18マス、その他の駒が22マスで合計40マスです。駒が載っていないマスは、81-40=41マスです。したがって、**駒が載っていないマスの方が1マスだけ多い**です。
+
+...

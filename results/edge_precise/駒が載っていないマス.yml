@@ -1,0 +1,14 @@
+answer: 駒が載っていないマス
+moderation: WRONG
+moderation_note: ''
+question: 将棋の初期配置で、駒が載っているマスと駒が載っていないマスはどちらが多いですか？
+result: |+
+  [1]: https://www.shogi-rule.com/koma_shoki/ "将棋の駒の初期配置と並べ順｜将棋ルール.com - 将棋のルールから覚える初心者向け入門サイト"
+  [2]: https://www.shogi.or.jp/knowledge/shogi/03.html "3.駒の動きと特徴｜本将棋｜将棋の基礎知識｜日本将棋連盟"
+  [3]: https://ja.wikipedia.org/wiki/%E5%A4%A7%E5%B1%80%E5%B0%86%E6%A3%8B "大局将棋 - Wikipedia"
+
+  将棋の初期配置では、駒が載っているマスと駒が載っていないマスは同じ数です。9×9マスの盤上に40枚の駒を上の図のように配置します。[^1^][1]
+
+  [^1^][1]: [将棋ルール.com](https://www.shogi-rule.com/koma_shoki/)
+
+...

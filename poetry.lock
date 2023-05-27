@@ -411,6 +411,22 @@ files = [
 ]
 
 [[package]]
+name = "googlebard"
+version = "1.1.3"
+description = "Reverse engineering of Google's Bard chatbot"
+optional = false
+python-versions = "*"
+files = [
+    {file = "GoogleBard-1.1.3-py3-none-any.whl", hash = "sha256:287e2d923f183c44e0ef2533daa0825e1072acc49ecd917b16e4524ccbfeb8fe"},
+    {file = "GoogleBard-1.1.3.tar.gz", hash = "sha256:29d6f151b071cc566f1730dbbc0adac091f71bec147a69a077d53e23c2fe848d"},
+]
+
+[package.dependencies]
+prompt-toolkit = "*"
+requests = "*"
+rich = "*"
+
+[[package]]
 name = "h11"
 version = "0.14.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
@@ -1186,4 +1202,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c16566acc727a78133f1c62fcc6f9ce86e7dd435f27c1b6155cc6d7b7d93e00f"
+content-hash = "de4cf8bd13b3dd89275bd6c84d48d2bf425024bbf53d2a7bea98ca59d542bb46"

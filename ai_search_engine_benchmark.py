@@ -1,5 +1,6 @@
 from revChatGPT.V1 import Chatbot as ChatGPTV1
-from EdgeGPT import Chatbot as EdgeGPT
+from EdgeGPT import Chatbot as EdgeGPT, Query
+from Bard import Chatbot as Bard
 from EdgeGPT import ConversationStyle
 from dotenv import dotenv_values
 from typing import TypeVar, Optional
@@ -31,19 +32,25 @@ add_representer(str, str_presenter)
 with open('questions.yml', encoding='utf-8') as file:
 	questions = load(file, Loader=Loader)
 
-chatgpt_client = ChatGPTV1(config={
-	'model': 'text-davinci-002-render-sha',
-	"access_token": not_none(env["CHATGPT_ACCESS_TOKEN"]),
-})
+bard_client = Bard(not_none(env["BARD_TOKEN"]))
 
-async def ask_chatgpt(prompt: str) -> str:
+async def ask_chatgpt(model: str, prompt: str) -> str:
+	chatgpt_client = ChatGPTV1(config={
+		'model': model,
+		'access_token': not_none(env["CHATGPT_ACCESS_TOKEN"]),
+	})
+
 	response = ""
 	for data in chatgpt_client.ask(prompt):
 		response = data["message"]
 	return response
 
+async def ask_bard(prompt: str) -> str:
+	result = bard_client.ask(prompt)
+	return result['content'].replace('\r\n', '\n')
+
 async def main():
-	edgegpt_client = await EdgeGPT.create(cookies=cookies)
+	edgegpt_client = await EdgeGPT.create()
 
 	async def ask_edgegpt(conversation_style: ConversationStyle, prompt: str) -> str:
 		await edgegpt_client.reset()
@@ -69,13 +76,15 @@ async def main():
 		return response
 
 	chat_engines = [
-		# ('chatgpt', ask_chatgpt),
-		('edge_creative', partial(ask_edgegpt, ConversationStyle.creative)),
-		('edge_precise', partial(ask_edgegpt, ConversationStyle.precise)),
+		('chatgpt_gpt35', partial(ask_chatgpt, 'text-davinci-002-render-sha'), ''),
+		('chatgpt_gpt4_browsing', partial(ask_chatgpt, 'gpt-4-browsing'), ' 検索して答えてください。'),
+		('edge_creative', partial(ask_edgegpt, ConversationStyle.creative), ' 検索して答えてください。'),
+		('edge_precise', partial(ask_edgegpt, ConversationStyle.precise), ' 検索して答えてください。'),
+		('bard', ask_bard, ''),
 	]
 
 	for question in questions:
-		for engine_name, ask in chat_engines:
+		for engine_name, ask, suffix in chat_engines:
 			# Ensure results directory
 			engine_path = Path('results') / engine_name
 			engine_path.mkdir(parents=True, exist_ok=True)
@@ -87,13 +96,19 @@ async def main():
 			else:
 				results = []
 
+			results = list(filter(lambda result: len(result['result']) > 0, results))
+
 			if len(results) >= EXPECTED_MAX_RESULTS:
 				print(f'Skipping {question["A"]} for {engine_name} as it has {len(results)} results')
 				continue
 
+			print('Waiting 5 seconds...')
+			await asyncio.sleep(5)
+
 			print(f'Asking {engine_name} for {question["A"]}')
+
 			try:
-				result = await ask(question["Q"])
+				result = await ask(question["Q"] + suffix)
 				print(f'Got result from {engine_name} for {question["A"]}:')
 				print(result)
 
@@ -104,9 +119,18 @@ async def main():
 					'moderation': 'NONE',
 					'moderation_note': '',
 				})
+
 			except Exception as e:
 				print(f'Failed to ask {engine_name} for {question["A"]}')
 				print(e)
+
+				results.append({
+					'question': question["Q"],
+					'answer': question["A"],
+					'result': '',
+					'moderation': 'NONE',
+					'moderation_note': '',
+				})
 
 			with open(result_file, 'w', encoding='utf-8') as file:
 				dump_all(results, file, Dumper=Dumper, allow_unicode=True)

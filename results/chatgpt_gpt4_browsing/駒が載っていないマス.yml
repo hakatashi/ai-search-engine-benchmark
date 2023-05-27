@@ -1,6 +1,6 @@
 answer: 駒が載っていないマス
 moderation: INVALID
-moderation_note: ''
+moderation_note: 正しい回答は得られるが、英語での回答のため不正な回答とした
 question: 将棋の初期配置で、駒が載っているマスと駒が載っていないマスはどちらが多いですか？ 検索して答えてください。
 result: |
   A Shogi board is a 9x9 grid, so there are 81 squares in total. At the start of the game, 40 pieces are placed on the board【5†source】. Therefore, there are 41 squares that do not have a piece on them. So, there are more squares without pieces than with pieces at the start of a Shogi game.

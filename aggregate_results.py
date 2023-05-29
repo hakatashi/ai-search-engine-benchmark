@@ -1,14 +1,5 @@
-from revChatGPT.V1 import Chatbot as ChatGPTV1
-from EdgeGPT import Chatbot as EdgeGPT, Query
-from Bard import Chatbot as Bard
-from EdgeGPT import ConversationStyle
-from dotenv import dotenv_values
-from typing import TypeVar, Optional
-from yaml import load, load_all, Loader, dump_all, Dumper, add_representer
+from yaml import load, load_all, Loader
 from pathlib import Path
-from functools import partial
-import asyncio
-import json
 import sys
 
 with open('questions.yml', encoding='utf-8') as file:
